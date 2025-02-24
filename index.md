@@ -9,12 +9,12 @@ country: "Tunisia"      # lowercase two-letter ISO country code such as "fr" (se
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Mar 07-21, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Mar 07-14-21, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "11:00 am - 12:30 pm GMT+1"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: "2025-03-07"      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: "2025-03-21"        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Melek Chaouch", "Meriem Hannachi"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: [""]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["GTCA training team"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["mcmelek@msn.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -67,11 +67,11 @@ WHAT IS ABOUT?
 This workshop will cover data management and analysis for genomics research including: best practices for organization of bioinformatics projects and data, use of command-line utilities, use of command-line tools to analyze sequence quality and perform variant calling, and connecting to and using cloud computing.
 
 {% comment %}
+
+{% endcomment %}
 AUDIENCE
 
 This lesson assumes that learners have no prior experience with the tools covered in the workshop. However, learners are expected to have some familiarity with biological concepts, including the concept of genomic variation within a population. An equipped informatics classroom is available for the participants.
-
-{% endcomment %}
 
 {% comment %}
 LOCATION
@@ -132,7 +132,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong>
-  {% if online == "false" %}
+  {% if online == "true" %}
     Participants will have access to a computer with a
     Mac, Linux, or Windows operating system.
   {% else %}
@@ -152,19 +152,12 @@ special instructions.
   <strong>Accessibility:</strong>
 {% if online == "true" %}
   We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
+  accessible to everybody.  
+
 <p>
   Materials will be provided in advance of the workshop and
   large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
+  organizers in advance.  
 </p>
 {% else %}
   We are dedicated to providing a positive and accessible learning environment for all. Please
