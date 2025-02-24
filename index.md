@@ -69,10 +69,9 @@ This workshop will cover data management and analysis for genomics research incl
 {% comment %}
 AUDIENCE
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
 This lesson assumes that learners have no prior experience with the tools covered in the workshop. However, learners are expected to have some familiarity with biological concepts, including the concept of genomic variation within a population. An equipped informatics classroom is available for the participants.
+
+{% endcomment %}
 
 {% comment %}
 LOCATION
@@ -88,7 +87,7 @@ address.
 {% elsif begin_address contains "http" %}
 {% assign online = "true_public" %}
 {% else %}
-{% assign online = "false" %}
+{% assign online = "true" %}
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
