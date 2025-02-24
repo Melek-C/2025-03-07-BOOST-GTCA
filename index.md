@@ -133,7 +133,7 @@ Modify the block below if there are any special requirements.
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "true" %}
-    Participants will have access to a computer with a
+    Participants should have computer with a
     Mac, Linux, or Windows operating system.
   {% else %}
     Participants will have access to a computer with a
